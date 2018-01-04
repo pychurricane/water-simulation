@@ -2,14 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class SeaMesh  {
+[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
+public class SeaMesh : MonoBehaviour {
 
-	// private static Vector3[] vertices;
-	// private static Mesh mesh;
+	private  Vector3[] vertices;
+	private  Mesh mesh;
 	
-	public static Mesh Generate(int xSize, int ySize) {
-		Vector3[] vertices;
-		Mesh mesh = new Mesh();
+	public int xSize;
+	public int ySize;
+
+	void Awake() {
+		Generate();
+	}
+	public  Mesh Generate() {
+		GetComponent<MeshFilter>().mesh =  mesh = new Mesh();
 
 		// vertices, uv, tangents
 		vertices = new Vector3[(xSize + 1) * (ySize + 1)];
@@ -44,16 +50,16 @@ public static class SeaMesh  {
 		return mesh;
 	}
 
-	// void OnDrawGizmos() {
-	// 	if(mesh == null) {
-	// 		return;
-	// 	}
+	void OnDrawGizmos() {
+		if(mesh == null) {
+			return;
+		}
 
-	// 	Gizmos.color = Color.gray;
-	// 	Gizmos.DrawWireMesh(mesh, transform.position, transform.rotation);
-	// 	// Gizmos.color = Color.black;
-	// 	// for (int i = 0; i < vertices.Length; i++) {
-	// 	// 	Gizmos.DrawSphere(vertices[i], 0.1f);
-	// 	// }
-	// }
+		Gizmos.color = Color.gray;
+		Gizmos.DrawWireMesh(mesh, transform.position, transform.rotation);
+		// Gizmos.color = Color.black;
+		// for (int i = 0; i < vertices.Length; i++) {
+		// 	Gizmos.DrawSphere(vertices[i], 0.1f);
+		// }
+	}
 }

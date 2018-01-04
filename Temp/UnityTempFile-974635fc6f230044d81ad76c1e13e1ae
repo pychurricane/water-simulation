@@ -156,9 +156,11 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 -define:CROSS_PLATFORM_INPUT
-Assets/Scripts/CreateWaves.cs
+Assets/Scripts/OceanMesh.cs
 Assets/Scripts/SeaMesh.cs
+Assets/Scripts/ShowTangentVisualizer.cs
 Assets/Scripts/WaterWave.cs
+Assets/Scripts/WaveCreator.cs
 -r:"E:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
 -r:"E:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
 -r:"E:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
