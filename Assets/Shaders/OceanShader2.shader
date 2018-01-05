@@ -59,7 +59,8 @@
 
 
 				float3 normal : TEXCOORD1;
-				float3 worldPos : TEXCOORD2;
+				float3 tangent : TEXCOORD2;
+				float3 worldPos : TEXCOORD3;
 			};
 
 			sampler2D _MainTex;

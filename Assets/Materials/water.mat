@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: water
-  m_Shader: {fileID: 4800000, guid: 86d2da565f7358545827e2e38daf88cd, type: 3}
+  m_Shader: {fileID: 4800000, guid: a3f070a499537e54394901fadc82fae4, type: 3}
   m_ShaderKeywords: _EMISSION _NORMALMAP
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 1
@@ -31,19 +31,31 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 205f30fc6c77b9541a870478613c1dfa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 2800000, guid: ea531f23a7d85ef4685333e3ab5fd4ff, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 50, y: 50}
         m_Offset: {x: 0, y: 0}
+    - _HightMap:
+        m_Texture: {fileID: 2800000, guid: f1949ca27a5e510478d239005c72e822, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ab97f9ab7c2ce724ebc9446060a819a4, type: 3}
-        m_Scale: {x: 100, y: 100}
+        m_Texture: {fileID: 2800000, guid: 260f098a893d9b144bbaefbdacd1a820, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normalmap:
+        m_Texture: {fileID: 2800000, guid: 2e94602cad4976147813e8dc1a95a884, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -60,29 +72,31 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Amplitude: 1
-    - _BumpScale: 1
+    - _BumpScale: 0.05
     - _Cutoff: 0.5
+    - _DetailBumpScale: 0.05
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.151
     - _GlossyReflections: 1
     - _Metalic: 0
-    - _Metallic: 0
+    - _Metallic: 1
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Smoothness: 0.161
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _Speed: 2
     - _SrcBlend: 1
+    - _TangentW: 46.57
     - _UVSec: 0
     - _WaveLength: 10
     - _ZWrite: 1
-    - _steepness: 0
+    - _steepness: 1
     m_Colors:
     - _Color: {r: 0.29241672, g: 0.22139925, b: 0.6691177, a: 1}
     - _Direction: {r: 1, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint: {r: 0.1911763, g: 0, b: 0.9558824, a: 1}
+    - _Tint: {r: 1, g: 1, b: 1, a: 1}
